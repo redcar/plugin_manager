@@ -51,5 +51,9 @@ class PluginManager
         @definition.dependencies << PluginManager::Dependency.new(PluginManager.current, name, ver)
       end
     end
+    
+    def description(value)
+      @definition.description = value
+    end
   end
 end

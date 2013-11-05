@@ -16,6 +16,7 @@ inside that looks like this:
     Plugin.define do
       name         "Extras"
       version      "1.0"
+      description  "Some extra functionality."
       
       # the file to load to load the plugin. It is expected to be an .rb
       # file relative to this definition

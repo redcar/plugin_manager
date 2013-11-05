@@ -5,11 +5,12 @@ class PluginManager
                   :version,
                   :object_string,
                   :file,
+                  :description,
                   :definition_file,
                   :resources
                   
     def inspect1              
-      "<Plugin #{name} #{version} depends:#{dependencies.inspect} #{required_files.length} files>"
+      "<Plugin #{name} #{version} description: \"#{description}\" depends:#{dependencies.inspect} #{required_files.length} files>"
     end
     
     def inspect
